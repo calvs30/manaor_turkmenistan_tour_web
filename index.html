@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurkmenTravel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between fixed w-full top-0 z-50">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg" 
+                    alt="TurkmenTravel Logo" 
+                    class="w-9 h-9 object-contain">
+                <span class="text-2xl cursor-pointer font-[Pacifico] font-bold">
+                    TurkmenTravel
+                </span>
+            </a>
+
+            <span class="text-3xl cursor-pointer md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 
+        md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in 
+        duration-500">
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="index.html" class="text-xl text-green-600 font-semibold duration-500">Home</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="about.html" class="text-xl hover:text-green-600 duration-500">About</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="tours.html" class="text-xl hover:text-green-600 duration-500">Tours</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="travelinfo.html" class="text-xl hover:text-green-600 duration-500">Travel Info</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="contact.html" class="text-xl hover:text-green-600 duration-500">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="relative h-screen bg-[url('https://cms.asmanoky.com/media/sliders/pictures/56/original_20250715120233465.jpg')] 
+        bg-cover bg-center flex items-center justify-center text-white text-center">
+        <div>
+            <h1 class="text-7xl font-bold mb-4">Welcome to Turkmenistan</h1>
+            <p class="text-lg mb-6">Discover the rich culture, history, and breathtaking landscapes of Central Asia’s hidden gem.</p>
+            <a href="tours.html" class="px-6 py-3 bg-black text-white rounded-lg shadow hover:bg-gray-700">Explore More</a>
+        </div>
+    </section>
+
+    <section class="py-20 px-10 bg-gray-100">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-10">Discover Turkmenistan Tourism</h2>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Are you craving a one-of-a-kind adventure? Do you want a dynamic blend of culture, nature and history? 
+                    Turkmenistan is the destination for you.<br>
+                    <br>
+                    In this majestic country, the ancient meets the modern and the result is sure to amaze you. Whether 
+                    you want to explore the capital city of Ashgabat with its lavish architecture, colorful bazaars and 
+                    oriental vibes contrasted by ancient cultural relics and impressive, stunning landscapes, ride a horse 
+                    through the Garaguum Desert, experience a homestay in a family yurt or explore the past traveling 
+                    along the mysterious Silk Road, this country is an adventure lover's dream. If you want to really get 
+                    off the beaten track and explore a fascinating land, start planning your trip to Turkmenistan now.
+                </p>
+            </div>
+            <div class="overflow-hidden rounded-xl">
+                <img 
+                    src="https://turkmentravels.com/storage/topics/OTveAC17duMm8nY20K3OhGwRcEm23LqCyhLEaMI0.jpg" 
+                    alt="Turkmenistan Landscape"
+                    class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            
+            <div class="bg-white p-6 flex flex-col items-center">
+                <div class="bg-yellow-300 shadow-md rounded-full w-20 h-20 flex items-center justify-center mb-3">
+                    <img 
+                    src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/sun-74.png" 
+                    alt="Turkmenistan Landscape"
+                    class="w-16 h-16 object-cover">
+                </div>
+                <div class="text-4xl font-bold mb-2">+80%</div>
+                <p class="text-gray-600">Covered by Desert</p>
+            </div>
+
+            <div class="bg-white p-6 flex flex-col items-center">
+                <div class="bg-blue-400 shadow-md rounded-full w-20 h-20 flex items-center justify-center mb-3">
+                    <img 
+                    src="https://cdn-icons-png.flaticon.com/512/503/503080.png" 
+                    alt="Turkmenistan Landscape"
+                    class="w-12 h-12 object-cover">
+                </div>
+                <div class="text-4xl font-bold mb-2">5</div>
+                <p class="text-gray-600">Bordering Countries</p>
+            </div>
+
+            <div class="bg-white p-6 flex flex-col items-center">
+                <div class="bg-red-400 shadow-md rounded-full w-20 h-20 flex items-center justify-center mb-3">
+                    <img 
+                    src="https://cdn-icons-png.flaticon.com/512/346/346515.png" 
+                    alt="Turkmenistan Landscape"
+                    class="w-12 h-12 object-cover">
+                </div>
+                <div class="text-4xl font-bold mb-2">+7,618,000</div>
+                <p class="text-gray-600">Population</p>
+            </div>
+
+            <div class="bg-white p-6 flex flex-col items-center">
+                <div class="bg-green-400 shadow-md rounded-full w-20 h-20 flex items-center justify-center mb-3">
+                    <img 
+                    src="https://icons.veryicon.com/png/o/miscellaneous/resume-breakpoint-simple-line-mark/travel-116.png" 
+                    alt="Turkmenistan Landscape"
+                    class="w-16 h-16 object-cover">
+                </div>
+                <div class="text-4xl font-bold mb-2">+14,000</div>
+                <p class="text-gray-600">Visitors per Year</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 px-10 bg-gray-100">
+        <h2 class="text-3xl font-bold text-center mb-10">Culture & Traditions</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://turkmenistan.gov.tm/storage/app/media/Images/2022/05-2022/29052022/Haly%20Bayramy/29052022-7-halybayramy.jpg"  
+                        alt="Turkmen Carpet"
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Turkmen Carpets</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        Turkmen carpets are renowned worldwide for their intricate patterns 
+                        and exceptional craftsmanship. Traditionally handwoven from high-quality 
+                        wool, these carpets reflect techniques passed down through generations.
+                    </p>
+                    <div class="mt-5">
+                        <button class="px-4 py-2 bg-green-800 text-white text-sm rounded-lg hover:bg-green-600">
+                            <a href="about.html#arts">Read More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://eurasianet.org/sites/default/files/styles/article/public/2021-11/141121-13.jpeg?itok=2bmCEVOw" 
+                        alt="Turkmen Cuisine"
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Turkmen Cuisine</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        Traditional dishes such as plov and shashlik play a central role in 
+                        Turkmenistan’s culinary heritage. Plov is a rich rice dish prepared 
+                        with meat, vegetables, and aromatic spices, commonly served during 
+                        celebrations and family gatherings.
+                    </p>
+                    <div class="mt-5">
+                        <button class="px-4 py-2 bg-green-800 text-white text-sm rounded-lg hover:bg-green-600">
+                            <a href="about.html#cuisine">Read More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://eurasia.travel/wp-content/uploads/2024/08/Nowruz-1024x683.jpeg" 
+                        alt="Turkmen Festivals"
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Turkmen Festivals</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        Colorful celebrations in Turkmenistan are a vibrant expression of 
+                        national identity and cultural pride. During national holidays, 
+                        communities gather to enjoy traditional music, lively dances, and 
+                        festive performances.Traditional attire is often showcased, reflecting its rich heritage.
+                    </p>
+                    <div class="mt-5">
+                        <button class="px-4 py-2 bg-green-800 text-white text-sm rounded-lg hover:bg-green-600">
+                            <a href="about.html#festival">Read More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 px-10">
+        <h2 class="text-3xl font-bold text-center mb-10">Must-Visit Places</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8">
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://ychef.files.bbci.co.uk/1280x720/p09kb54k.jpg" 
+                        alt="Darvaza Gas Crater" 
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Darvaza Gas Crater</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Known as the “Door to Hell,” this fiery crater has been burning for decades and is a spectacular sight at night.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://i0.wp.com/unfilteredtravelling.com/wp-content/uploads/2020/05/20190425_0822590.jpg" 
+                        alt="Ashgabat City" 
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Ashgabat</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        The capital city is famous for its white marble buildings, modern architecture, and cultural landmarks.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://trvlland.com/wp-content/uploads/2024/12/turkmenistan_kunya-urgench.jpg" 
+                        alt="Kunya-Urgench" 
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Kunya-Urgench</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        An ancient city with stunning mausoleums and historical monuments, reflecting Turkmenistan’s rich past.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://i.guim.co.uk/img/media/61ad9288bb4c0b84f74fd53fb9dfb3e4f9247a97/0_346_5384_3231/master/5384.jpg?width=700&quality=85&auto=format&fit=max&s=ec0f259f3067f2b394ec78ac8589f2f8" 
+                        alt="Merv Archaeological Site" 
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Merv</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        One of the oldest Silk Road cities, featuring archaeological sites that span thousands of years of history.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://nextjourneyahead.com/wp-content/uploads/2025/07/turkmenistan-yangykala-canyon-on-top.jpeg" 
+                        alt="Yangykala Canyon" 
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Yangykala Canyon</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        A breathtaking natural canyon known for its vibrant colors and dramatic cliffs, perfect for photography and hiking.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden">
+
+        <iframe
+            class="absolute top-1/2 left-1/2 w-[177.77vh] h-[56.25vw] min-w-full min-h-full max-w-none -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            src="https://www.youtube.com/embed/0jQSzWCCcJo?autoplay=1&mute=1&loop=1&playlist=0jQSzWCCcJo&controls=0&modestbranding=1&playsinline=1"
+            frameborder="0"
+            allow="autoplay; fullscreen">
+        </iframe>
+
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-green-900/80"></div>
+
+        <div class="relative z-10 max-w-2xl px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                Explore and Unlock the Mysteries of Turkmenistan
+            </h1>
+            <p class="text-lg md:text-xl mb-6">
+                Come and join us on an unfogettable journey to Turkmenistan
+            </p>
+        </div>
+
+    </section>
+
+    <section class="py-20 px-10 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold mb-6">We will help you choose the perfect vacation!</h2>
+        <p class="text-gray-600 leading-relaxed mb-12">We will certainly take your preferences into account and help you choose the perfect vacation. 
+            Exciting destinations are waiting for you!
+        </p>
+        <div class="grid grid-cols-3 gap-2 px-2">
+            <div>
+                <img src="https://cdn-icons-png.freepik.com/512/3942/3942053.png"
+                    alt="Tour Selection"
+                    class="w-24 h-24 object-cover mx-auto mb-3">
+                <div class="p-2 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-3">Tour Selection</h3>
+                    <p class="text-gray-600 leading-relaxed">You choose the best trip you like</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="https://cdn-icons-png.freepik.com/512/455/455604.png"
+                    alt="Contact Us"
+                    class="w-24 h-24 object-cover mx-auto mb-3">
+                <div class="p-2 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-3">Contact Us</h3>
+                    <p class="text-gray-600 leading-relaxed">Contact us in any way convenient for you</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/1322/1322237.png"
+                    alt="Planning"
+                    class="w-24 h-24 object-cover mx-auto mb-3">
+                <div class="p-2 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-3">Planning</h3>
+                    <p class="text-gray-600 leading-relaxed">We discuss all the details and start planning</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10">
+            <button class="px-6 py-3 bg-green-800 text-white rounded-lg shadow hover:bg-green-600"><a href="contact.html">Let's Go</a></button>
+        </div>
+    </section>
+
+    <footer class="bg-white text-black shadow py-6 text-center">
+        <p>&copy; 2026 Turkmenistan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close",
+            list.classList.add('top-[50px]'),
+            list.classList.add('opacity-100'))
+
+            : (e.name = "menu",
+            list.classList.remove('top-[50px]'),
+            list.classList.remove('opacity-100'))
+
+        }
+    </script>
+</body>
+</html>

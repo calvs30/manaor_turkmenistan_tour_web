@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurkmenTravel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between fixed w-full top-0 z-50">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg" 
+                    alt="TurkmenTravel Logo" 
+                    class="w-9 h-9 object-contain">
+                <span class="text-2xl cursor-pointer font-[Pacifico] font-bold">
+                    TurkmenTravel
+                </span>
+            </a>
+
+            <span class="text-3xl cursor-pointer md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 
+        md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in 
+        duration-500">
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="index.html" class="text-xl hover:text-green-600 duration-500">Home</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="about.html" class="text-xl hover:text-green-600 duration-500">About</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="tours.html" class="text-xl text-green-600 font-semibold duration-500">Tours</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="travelinfo.html" class="text-xl hover:text-green-600 duration-500">Travel Info</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="contact.html" class="text-xl hover:text-green-600 duration-500">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="relative h-screen bg-[url('https://images.squarespace-cdn.com/content/v1/620b705876b230130e2b3710/bf81fa28-a872-4dfd-ad9f-d492e537864c/iStock-1191593737.jpg')] 
+        bg-cover bg-center flex items-center justify-center text-white text-center">
+        <div>
+            <h1 class="text-7xl font-bold mb-4">Explore Turkmenistan</h1>
+            <p class="text-lg mb-6">Discover Turkmenistan’s stunning landscapes that shape its unique identity</p>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 md:px-20 lg:px-40">
+        <h2 class="text-3xl font-bold text-center mb-4">Why Visit Turkmenistan?</h2>  
+        <p class="text-gray-600 text-lg text-center max-w-4xl mx-auto leading-relaxed">
+            Turkmenistan is a wonderfully bizarre country, a natural gas-rich Central Asian state slowly thawing from a period 
+            of lengthy isolation from the outside world. From the gleaming, marbled capital of Ashgabat to the fiery ‘Gates of Hell’ 
+            Darvaza gas crater, it is home to awe-inspiring modern and Islamic architecture, ancient archaeological sites, and 
+            some of the most dramatic landscapes in Central Asia—and even the world.
+        </p>
+    </section>
+
+    <section class="grid md:grid-cols-2 min-h-screen">
+        <div class="relative">
+            <img 
+                src="https://s.yimg.com/ny/api/res/1.2/OFQDcUD9KGVfzSw1hhogow--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk5MTtjZj13ZWJw/https://s.yimg.com/os/creatr-uploaded-images/2025-11/9672d820-bfb5-11f0-bf87-48294ef80494"
+                class="absolute inset-0 w-full h-full object-cover"
+                alt="Travelstyles">
+        </div>
+
+        <div class="bg-gray-100 flex items-center justify-center px-8 py-16">
+            <div class="w-full max-w-lg">
+                <h2 class="text-3xl font-bold text-center mb-4">What to Do in Turkmenistan?</h2>
+                <p class="text-gray-600 text-lg text-justify mb-10">Turkmenistan offers a unique mix of natural wonders, 
+                    historical landmarks, and cultural experiences that make it an exciting destination to explore. 
+                    One of the most popular activities is visiting the famous Darvaza Gas Crater, where visitors can 
+                    witness a massive burning crater in the middle of the desert, especially stunning at night. Travelers 
+                    can also explore ancient Silk Road cities like Merv and Konye-Urgench, which are rich in history and 
+                    architecture. <br><br>
+                    For those who enjoy modern attractions, the capital city Ashgabat is known for its impressive white 
+                    marble buildings, museums, and monuments. Nature lovers can experience adventure by traveling across 
+                    the vast Karakum Desert, where activities like camping, jeep tours, and camel rides are popular. 
+                    Visitors can also immerse themselves in local culture by attending traditional festivals, watching 
+                    folk performances, and shopping for handmade Turkmen carpets. <br><br>
+                    Overall, Turkmenistan provides a blend of adventure, history, and cultural discovery, making it a 
+                    truly unique place to visit.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-10">
+        <h2 class="text-3xl font-bold text-center mb-4">Top 5 Iconic Landmarks</h2>
+        <p class="text-gray-600 text-lg text-center mb-10">Planning to visit Turkmenistan then you are at right place. 
+            Plan your incredible Turkmenistan tour with local experts and experience the wonders of Turkmenistan.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://ychef.files.bbci.co.uk/1280x720/p09kb54k.jpg"  
+                        alt="Turkmen Carpet"
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Darvaza Gas Crater</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        Known as the “Door to Hell,” this massive gas crater in the Karakum Desert has been burning since 
+                        1971 after a drilling accident. Measuring about 230 feet (70 meters) wide, its fiery glow creates 
+                        a dramatic nighttime spectacle and highlights Turkmenistan’s rich natural gas reserves.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://i0.wp.com/unfilteredtravelling.com/wp-content/uploads/2020/05/20190425_0822590.jpg" 
+                        alt="Turkmen Cuisine"
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Ashgabat</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        The capital of Turkmenistan, Ashgabat is renowned for its dazzling white marble buildings, modern 
+                        urban design, and grand monuments. The city features impressive cultural landmarks, including 
+                        museums, theaters, and government buildings, reflecting Turkmenistan’s history and national 
+                        identity. Its wide boulevards and landscaped parks make it a unique blend of modernity and tradition.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://trvlland.com/wp-content/uploads/2024/12/turkmenistan_kunya-urgench.jpg" 
+                        alt="Turkmen Festivals"
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Kunya-Urgench</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        Once a major medieval city along the Silk Road, Kunya-Urgench is home to remarkable mausoleums, 
+                        minarets, and ancient monuments. Its well-preserved architectural sites reflect Turkmenistan’s 
+                        rich history, Islamic heritage, and cultural achievements over centuries. Recognized as a 
+                        UNESCO World Heritage Site, it offers a unique glimpse into the region’s past and its significance 
+                        in trade and civilization.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://i.guim.co.uk/img/media/61ad9288bb4c0b84f74fd53fb9dfb3e4f9247a97/0_346_5384_3231/master/5384.jpg?width=700&quality=85&auto=format&fit=max&s=ec0f259f3067f2b394ec78ac8589f2f8" 
+                        alt="Turkmen Festivals"
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Merv</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        One of the oldest cities on the Silk Road, Merv is an archaeological treasure that spans thousands 
+                        of years of history. The site includes ancient fortresses, mausoleums, and city ruins, offering a 
+                        fascinating glimpse into Turkmenistan’s cultural and historical legacy as a center of trade and 
+                        civilization.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://nextjourneyahead.com/wp-content/uploads/2025/07/turkmenistan-yangykala-canyon-on-top.jpeg" 
+                        alt="Turkmen Festivals"
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Yangykala Canyon</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        A breathtaking natural wonder, Yangykala Canyon is famous for its vibrant, multicolored cliffs and 
+                        dramatic rock formations. Carved over millennia, the canyon offers stunning views ideal for 
+                        photography and hiking, showcasing the striking landscapes of Turkmenistan’s western deserts.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 min-h-screen">
+
+        <div class="bg-gray-100 flex items-center justify-center px-8 py-16">
+            <div class="w-full max-w-lg">
+                <h2 class="text-3xl font-bold text-center mt-15 mb-4">Discover Turkmenistan Your Way</h2>
+                <p class="text-gray-600 text-lg text-justify mb-10">Unveil the wonders of Turkmenistan, where ancient 
+                    Silk Road cities blend with stunning landscapes and vibrant traditions. Journey through mystical 
+                    ruins, marvel at natural marvels, and immerse yourself in a rich cultural tapestry.
+                </p>
+            </div>
+        </div>
+
+        <div class="relative">
+            <img 
+                src="https://emerging-europe.com/wp-content/uploads/2022/01/bigstock-turkmenistan-darvaza-march-312932953-990x556.jpeg"
+                class="absolute inset-0 w-full h-full object-cover"
+                alt="Travelstyles">
+        </div>
+    </section>
+
+    <section class="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden">
+
+        <iframe
+            class="absolute top-1/2 left-1/2 w-[177.77vh] h-[56.25vw] min-w-full min-h-full max-w-none -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            src="https://www.youtube.com/embed/KXTFGUxJGU8?autoplay=1&mute=1&loop=1&playlist=KXTFGUxJGU8&controls=0&modestbranding=1&playsinline=1"
+            frameborder="0"
+            allow="autoplay; fullscreen">
+        </iframe>
+
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-green-900/80"></div>
+
+        <div class="relative z-10 max-w-2xl px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                Majestic Turkmenistan Awaits
+            </h1>
+            <p class="text-lg md:text-xl mb-6">
+                Dive into the splendour of Turkmenistan. Experience breathtaking landscapes and timeless monuments.
+            </p>
+        </div>
+
+    </section>
+
+    <footer class="bg-white text-black shadow py-6 text-center">
+        <p>&copy; 2026 Turkmenistan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close",
+            list.classList.add('top-[50px]'),
+            list.classList.add('opacity-100'))
+
+            : (e.name = "menu",
+            list.classList.remove('top-[50px]'),
+            list.classList.remove('opacity-100'))
+
+        }
+    </script>
+</body>
+</html>

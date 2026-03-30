@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurkmenTravel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between fixed w-full top-0 z-50">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg" 
+                    alt="TurkmenTravel Logo" 
+                    class="w-9 h-9 object-contain">
+                <span class="text-2xl cursor-pointer font-[Pacifico] font-bold">
+                    TurkmenTravel
+                </span>
+            </a>
+
+            <span class="text-3xl cursor-pointer md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 
+        md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in 
+        duration-500">
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="index.html" class="text-xl hover:text-green-600 duration-500">Home</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="about.html" class="text-xl text-green-600 font-semibold duration-500">About</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="tours.html" class="text-xl hover:text-green-600 duration-500">Tours</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="travelinfo.html" class="text-xl hover:text-green-600 duration-500">Travel Info</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="contact.html" class="text-xl hover:text-green-600 duration-500">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="relative h-screen bg-[url('https://www.nationalgeographic.com/content/dam/expeditions/destinations/asia/signature/uzbekistan-turkmenistan/signature-autans-Hero.jpg')] 
+        bg-cover bg-center flex items-center justify-center text-white text-center">
+        <div>
+            <h1 class="text-7xl font-bold mb-4">About Turkmenistan</h1>
+            <p class="text-lg mb-6">Learn about Turkmenistan’s history, traditions, and landscapes that define its identity</p>
+        </div>
+    </section>
+
+    <section class="py-20 px-20 bg-gray-100">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-10">Geography</h2>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Turkmenistan occupies a strategic location with diverse landscapes spanning vast territories. 
+                    The country covers an area of 491,210 square kilometers, divided into distinct regions each with 
+                    unique characteristics. It emerged as an independent state in 1991.<br><br>
+                    The national capital is Ashgabat. There are five administrative subdivisions, called velayat, or 
+                    region, each with its own regional capital:
+
+                    <ul class="list-disc pl-5 text-gray-600">
+                        <li>Ahal Velayat (Anau)</li>
+                        <li>Balkan Velayat (Balkanabad)</li>
+                        <li>Mary Velayat (Mary)</li>
+                        <li>Dashoguz Velayat (Dashoguz)</li>
+                        <li>Lebap Velayat (Turkmenabad)</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="overflow-hidden rounded-xl">
+                <img 
+                    src="https://geohistory.today/wp-content/uploads/2015/01/bb01ff2aa5b3f0f259cde9c5aa85910e.png" 
+                    alt="Turkmenistan Landscape"
+                    class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-20">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="overflow-hidden rounded-xl order-2 md:order-1">
+                <img 
+                    src="https://central-asia.guide/wp-content/uploads/2021/03/Merv_Soltan_Sanjar_Mausoleum-1024x682.jpg" 
+                    alt="Turkmenistan Landscape"
+                    class="w-full h-full object-cover">
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-3xl font-bold mb-10">History</h2>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Turkmenistan has a deep and complex history that dates back thousands of years, with evidence of 
+                    early civilizations such as the Margiana culture thriving in the region. It became a key part of 
+                    the Silk Road, allowing cities like Merv to grow into major centers of trade, culture, and Islamic 
+                    scholarship during the medieval period. <br><br>
+                    Throughout its history, the region was ruled by powerful 
+                    empires, including the Achaemenid Persian Empire, the forces of Alexander the Great, and later 
+                    the Seljuk Turks and Mongol Empire. These influences shaped the country’s culture, architecture, 
+                    and traditions, many of which are still visible today. In the 19th century, Turkmenistan was 
+                    gradually conquered by the Russian Empire, and it later became the Turkmen Soviet Socialist 
+                    Republic under the Soviet Union. After the dissolution of the Soviet Union in 1991, Turkmenistan 
+                    declared independence and has since developed as a sovereign nation with its own political system 
+                    and cultural identity.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cuisine" class="py-20 px-20 bg-gray-100">
+        <div class="grid md:grid-cols-2 gap-8 items-center mb-10">
+            <div>
+                <h2 class="text-3xl font-bold mb-10">Cuisine</h2>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Turkmen cuisine is varied, and includes both meat dishes and soups, and as well as plenty of 
+                    fruits and vegetables. Bread is a must for every meal. A piece of fresh Turkmen flat round bread, 
+                    churek, baked at home in clay ovens, is delicious in combination with any meal or snack.<br><br>
+                    Plov (pilaf) is considered the king of dishes, prepared for celebrations and gatherings. Each region 
+                    has its own variation, reflecting local ingredients and preferences.
+                    Most cafes and restaurants cook up a combination of Turkmen and Russian dishes, and offer a large 
+                    list of salads and side dishes (rice, fried potatoes, pasta, and mashed potatoes). None of the 
+                    dishes are heavy on spices, but herbs such as parsley, coriander, basil and dill are frequently added.
+                </p>
+            </div>
+            <div class="overflow-hidden rounded-xl">
+                <img 
+                    src="https://hazarmerjeni.com.tm/wp-content/uploads/2023/10/National-foods-of-Turkmenistan.jpg" 
+                    alt="Turkmenistan Landscape"
+                    class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-bold text-center mb-10">Turkmens Famous Delicacies</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8">
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://greedy-panda.com/wp-content/uploads/2023/09/Ubbek-Plov-scaled.jpg" 
+                        alt="Plov" 
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Plov</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        The staple dish of Turkmenistan, it is a rich mixture of rice, lamb, carrots, onions, and oil, often served at celebrations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://turkmenkitchen.com/static/images/dograma-4.jpg" 
+                        alt="Dograma" 
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Dograma</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Hearty dish prepared for large gatherings, made by tearing thin bread into pieces and mixing it with boiled meat and onions, served with broth.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://www.advantour.com/img/turkmenistan/food/kovurma-chorba.jpg" 
+                        alt="Tamdyrlama" 
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Tamdyrlama</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        A highly regarded specialty consisting of lamb cooked slowly inside a tamdyr (clay oven), resulting in tender meat without direct flame contact.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://piquantpost.com/cdn/shop/articles/hsyPofrzl9YJfQehrcPVf_1000x.jpg?v=1706156955" 
+                        alt="Gutap" 
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Gutap</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Crescent-shaped pan-fried pastries stuffed with various fillings, most commonly spiced meat, onions, herbs, or spinach.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://hazarmerjeni.com.tm/wp-content/uploads/2024/03/turkmenskiy-chorek-hleb.webp" 
+                        alt="Chorek" 
+                        class="w-full h-56 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Chorek</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        A sacred, thick round bread baked in a tamdyr (clay oven), essential to every meal.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="arts" class="py-20 px-20">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="overflow-hidden rounded-xl order-2 md:order-1">
+                <img 
+                    src="https://www.sitara.com/upload/medialibrary/6c4/turkmenistan-arts-crafts%20(5).jpg" 
+                    alt="Turkmenistan Landscape"
+                    class="w-full h-full object-cover">
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-3xl font-bold mb-10">Arts & Crafts</h2>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    For Turkmen people carpets are not only a symbol of beauty and happiness, but also tell 
+                    the story of their forefathers; carpets tell Turkmen history. For centuries, travelers 
+                    through Turkmenistan document about the quality of the carpets woven here.<br><br>
+                    Although carpets were already being produced in the time of the Seljuks, the first written 
+                    reference to Turkmen carpets was made by Marco Polo (XIII c). In the XIV c Ibn Batutta also 
+                    writes about woolen carpets in homes of inhabitants of (Kunya) Urgench, and of silk carpets 
+                    in the palace of Kutlug-Timur there. We can also find Turkmen carpets back in the paintings 
+                    of the masters of the Italian Renaissance (XIV-XV cc), and (probably) in the miniatures of 
+                    Timurid times such as the Shah-name (XV c).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="festival" class="py-20 px-20 bg-gray-100">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-10">Festivals</h2>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Turkmenistan’s festivals and celebrations are an important reflection of the country’s rich 
+                    cultural heritage and traditions. One of the most significant celebrations is Nowruz, which 
+                    marks the arrival of spring and is celebrated with traditional food, music, and community 
+                    gatherings. <br><br>
+                    During national holidays, people enjoy folk dances, performances, and wear colorful 
+                    traditional clothing. Events often include horse racing, especially featuring the famous Akhal-Teke 
+                    horses, which are a symbol of national pride. Independence Day and Neutrality Day are also widely 
+                    celebrated with parades, fireworks, and cultural shows. These festivals help preserve Turkmen 
+                    identity while bringing communities together in a spirit of unity and joy.
+                </p>
+            </div>
+            <div class="overflow-hidden rounded-xl">
+                <img 
+                    src="https://live.staticflickr.com/7396/26691100482_05652557f6_b.jpg" 
+                    alt="Turkmenistan Landscape"
+                    class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section class="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden">
+
+        <iframe
+            class="absolute top-1/2 left-1/2 w-[177.77vh] h-[56.25vw] min-w-full min-h-full max-w-none -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            src="https://www.youtube.com/embed/kJ2n1AHva8w?autoplay=1&mute=1&loop=1&playlist=kJ2n1AHva8w&controls=0&modestbranding=1&playsinline=1"
+            frameborder="0"
+            allow="autoplay; fullscreen">
+        </iframe>
+
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-green-900/80"></div>
+
+    </section>
+
+    <section class="py-20 px-20">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="overflow-hidden rounded-xl order-2 md:order-1">
+                <img 
+                    src="https://images.euronews.com/articles/stories/09/43/01/38/1536x864_cmsv2_ef0df6a9-b3bd-5ca6-8abe-fb8e63b32358-9430138.jpg" 
+                    alt="Turkmenistan Landscape"
+                    class="w-full h-full object-cover">
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-3xl font-bold mb-10">Nature</h2>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    A boring landscape? <br><br>
+                    In fact, Turkmenistan holds some of the most fascinating diversity of landscapes — from moving 
+                    sand dunes and limestone cliffs to lush river valleys and mountains formed in the Jurassic period. 
+                    There are also volcanoes, waterfalls, lakes, and of course, the Caspian Sea. <br><br>
+                    Moreover, the country hosts several nature reserves that protect unique and endangered species of 
+                    flora and fauna. Below, you will find descriptions of some of the best-known nature reserves, their 
+                    protected species, and other notable features.All nature reserves in Turkmenistan are protected areas 
+                    and not open to the public, except for scientists with approval from the Ministry of Nature Protection.
+                </p>
+            </div>
+        </div>
+        
+        <h2 class="text-3xl font-bold text-center mt-10 mb-10">Turkmenistan Natural Wonders</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+            <div class="relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img 
+                    src="https://ychef.files.bbci.co.uk/1280x720/p09kb54k.jpg"  
+                    alt="Darvaza"
+                    class="w-full h-56 object-cover">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+                <div class="absolute bottom-4 left-4 text-white z-10">
+                    <h3 class="text-lg font-semibold">Darvaza Gas Crater</h3>
+                    <p class="text-sm">The Door to Hell</p>
+                </div>
+            </div>
+
+            <div class="relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img 
+                    src="https://eurasia.travel/wp-content/uploads/2025/09/6.-Karakum-Desert-in-Turkmenistan.jpg" 
+                    alt="Karakum Desert"
+                    class="w-full h-56 object-cover">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+                <div class="absolute bottom-4 left-4 text-white z-10">
+                    <h3 class="text-lg font-semibold">Karakum Desert</h3>
+                    <p class="text-sm">Vast golden sands</p>
+                </div>
+            </div>
+
+            <div class="relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img 
+                    src="https://www.asia-hikes.com/wp-content/uploads/2025/01/IMG_3665-scaled.jpg" 
+                    alt="Yangykala Canyon"
+                    class="w-full h-56 object-cover">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+                <div class="absolute bottom-4 left-4 text-white z-10">
+                    <h3 class="text-lg font-semibold">Yangykala Canyon</h3>
+                    <p class="text-sm">Colorful rock formations</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 px-20 bg-gray-100">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-10">Ahalteke Horses</h2>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    The Akhalteke horse, known as the “golden horse of Turkmenistan,” is one of the oldest and most elegant 
+                    horse breeds in the world. Its shimmering coat and unmatched endurance have made it a symbol of pride 
+                    and strength for our nation. <br><br>
+                    Experts say that nowhere in the world but in Turkmenistan nature and man’s efforts have succeeded in 
+                    creating such a graceful, exceptional, tireless, sturdy, noble horse as the Akhal Teke. They are not 
+                    only fast and of great endurance but also of peculiar royal beauty. These horses became one of the 
+                    most striking illustrations of talent and mastery of Turkmen people. Turkmen are very proud of their 
+                    horses. <br><br>
+                    Today, they remain a national treasure and are celebrated annually in festivals and races that honor 
+                    their beauty, grace, and the deep bond between the Turkmen people and their horses
+                </p>
+            </div>
+            <div class="overflow-hidden rounded-xl">
+                <img 
+                    src="https://eurasia.travel/wp-content/uploads/2024/08/Akhal-Teke-horses-1024x682.jpg" 
+                    alt="Turkmenistan Landscape"
+                    class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-black shadow py-6 text-center">
+        <p>&copy; 2026 Turkmenistan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close",
+            list.classList.add('top-[50px]'),
+            list.classList.add('opacity-100'))
+
+            : (e.name = "menu",
+            list.classList.remove('top-[50px]'),
+            list.classList.remove('opacity-100'))
+
+        }
+    </script>
+</body>
+</html>

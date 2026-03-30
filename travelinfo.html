@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurkmenTravel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between fixed w-full top-0 z-50">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg" 
+                    alt="TurkmenTravel Logo" 
+                    class="w-9 h-9 object-contain">
+                <span class="text-2xl cursor-pointer font-[Pacifico] font-bold">
+                    TurkmenTravel
+                </span>
+            </a>
+
+            <span class="text-3xl cursor-pointer md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 
+        md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in 
+        duration-500">
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="index.html" class="text-xl hover:text-green-600 duration-500">Home</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="about.html" class="text-xl hover:text-green-600 duration-500">About</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="tours.html" class="text-xl hover:text-green-600 duration-500">Tours</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="travelinfo.html" class="text-xl text-green-600 font-semibold duration-500">Travel Info</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="contact.html" class="text-xl hover:text-green-600 duration-500">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="relative h-screen bg-[url('https://media.cntraveler.com/photos/5fd26c4ddf72876c320b8001/16:9/w_2560%2Cc_limit/952456172')] 
+        bg-cover bg-center flex items-center justify-center text-white text-center">
+        <div>
+            <h1 class="text-8xl font-bold mb-4">Travel Info</h1>
+            <p class="text-lg mb-6">A little step may be the beginning of a great journey!</p>
+        </div>
+    </section>
+
+    <section class="py-20 px-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://www.themercuryville.com/wp-content/uploads/2024/11/%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B9%84%E0%B8%9B%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%81%E0%B8%A3%E0%B8%81.jpg"  
+                        alt="Turkmen Carpet"
+                        class="w-full h-80 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Before you go</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        In preparation for your trip through Turkmenistan, please bear in mind the following:
+
+                        <ul class="list-disc pl-5 text-gray-600">
+                            <li>Bring cash USD bank notes (do not rely on EURO, credit cards or travelers cheques for 
+                                your local expenses in Turkmenistan; visa, migration tax and vehicle transit costs can 
+                                be paid in cash USD exclusively)
+                            </li>
+                            <li>Bring some paper copies of your passport, while the staff takes your original passport for 
+                                the registration on arrival procedure, that is usually done on the first working day after 
+                                your first night’s accommodation in a hotel or motel.
+                            </li>
+                            <li>Bring a mobile phone in order to contact our agency in case of unexpected delays in 
+                                arriving at the Turkmen border.
+                            </li>
+                            <li>Bring some properly packed print copies of the LOI, to be handed over to the visa 
+                                authorities at the point where you intend to collect your visa on arrival.Or determine 
+                                several possible locations on your way to Turkmenistan where you can access your email 
+                                and print the Turkmenistan LOI, prior to your arrival at the land border where you 
+                                intend to collect your visa and enter Turkmenistan.
+                            </li>
+                            <li>Bring appropriate (light but sturdy) footwear for travel in mountains, canyons and desert areas.
+                                Bring glasses as alternative to contact lenses, in case the desert sand irritates your eyes.
+                            </li>
+                            <li>Bring your doctor’s prescription for any personal medication that you require and plan to bring with you.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://cdn.prod.website-files.com/5babdde83d87284cdef47ade/5eebbe9bfcc168d45992c488_Image%20Right.jpg" 
+                        alt="Turkmen Cuisine"
+                        class="w-full h-80 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Visa</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        To enter Turkmenistan all leisure travelers are required to have a transit or tourist visa. 
+                        The tourist visas are delivered on the basis of an approved visa support letter, also referred 
+                        to as a Letter of Invitation (LOI). OWADAN Tourism is a licensed tourism travel agency in 
+                        Turkmenistan that can provide you with the Letter of Invitation. The LOI requires usually 
+                        6-11 working days to process. Once the LOI is has been issued/approved, we will send a 
+                        scanned copy of it to you by email. <br><br>
+                        With an approved LOI you can apply for your visa at a Turkmen embassy or consulate abroad, 
+                        or obtain it directly at the Turkmen land border at Gaudan (Bajgiran/Mashhad, Iran), Serags 
+                        (Sarakhs, Iran), Turkmenbashi harbor (by ferry arrival from Baku) or at the international 
+                        airport in Ashgabat upon arrival. Please kindly note that Garabogaz border post (Temirbaba, 
+                        Kazakhstan) is temporarily closed and the only possibility to enter Turkmenistan from Kazakhstan 
+                        is using a flight from Almaty to Ashgabat (3 times a week). <br><br>
+                        Next to the LOI, an Entry Travel Pass and country registration is automatically required.<br>
+                        For information check the website of <a href="https://www.mfa.gov.tm/en/articles/63?breadcrumbs=no" class="text-green-500">Ministry of Foreign Affairs of Turkmenistan.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 min-h-screen">
+        <div class="relative">
+            <img 
+                src="https://www.overcross.com/uploads/1000/1000131/2025/05/09/gvi-erl-19_600_600.jpg"
+                class="absolute inset-0 w-full h-full object-cover"
+                alt="Travelstyles">
+        </div>
+
+        <div class="bg-gray-100 flex items-center justify-center px-8 py-16">
+            <div class="w-full max-w-lg">
+                <h3 class="text-xl font-bold text-gray-800">By air</h3>
+                <p class="text-gray-600 leading-relaxed text-justify mb-4">Turkmenistan airlines operate regular air connections 
+                    from Ashgabat to five other major Turkmenistan cities (Turkmenabat, Mary, Dashoguz, Turkmenbashi, 
+                    and Balkanabad). Infrequent flights operate between some of these cities as well. Flight and time 
+                    tables are regularly updated.<br>
+                    Domestic flights are inexpensive. Flights are serviced by 717 Boeing aircrafts. Air tickets can be 
+                    purchased through our company. Turkmenistan Airlines authorities set up a maximum baggage allowance 
+                    of 20 kg (this is including hand luggage).
+                </p>
+                <h3 class="text-xl font-bold text-gray-800">By rail</h3>
+                <p class="text-gray-600 leading-relaxed text-justify mb-4">These same five major Turkmenistan cities are also 
+                    easily accessible by rail from Ashgabat. Turkmen State Railways has recently obtained new train 
+                    compartments and locomotives, which allows for comfortable travel conditions in both summer heat 
+                    and winter cold. Most trains operate night services. Tickets can be purchased through our company.
+                </p>
+                <h3 class="text-xl font-bold text-gray-800">By road</h3>
+                <p class="text-gray-600 leading-relaxed text-justify mb-4">The Turkmenistan road network is relatively 
+                    well-developed. Motorists have at their disposal a extensive network of fuel stations run by the Turkmen 
+                    National Oil Company. Most stations, especially those on intercity routes, are open 24 hours. Almost 
+                    all fuel stations sell a range of fuel, including standard (92 octane) and super (95 octane) as well 
+                    as diesel and car accessories.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://www.sunderland.edu.hk/wp-content/uploads/2023/10/Blog-2-01.jpg"  
+                        alt="Turkmen Carpet"
+                        class="w-full h-80 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Get to</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        The international airport of Ashgabat is one of Turkmenistan’s major gateways. 
+                        The <a href="https://turkmenistanairlines.tm/" class="text-green-500">National Airline of Turkmenistan</a> 
+                        (Turkmenistan Airlines, abbreviation T5) operates regular flights to Frankfurt, Moscow, 
+                        Sankt-Petersburg, Kazan, Minsk, Almaty, London, Birmingham, Istanbul, Ankara, Abu Dhabi, Dubai, 
+                        Delhi, Peking and Bangkok. Since independence the national airline of Turkmenistan has completely 
+                        replenished its fleet with Boeing aircrafts. <br><br>
+                        Several foreign air-carriers operate flights to Ashgabat: Turkish Airlines, FlyDubai, Belavia 
+                        and S7/Siberia Airlines. Turkish Airlines has <a href="https://www.turkishairlines.com/" class="text-green-500 underline">daily flights</a> 
+                        between Istanbul and Ashgabat, and is most frequently used by travelers coming from Europe. <a href="https://www.flydubai.com/" class="text-green-500">FlyDubai</a> has three 
+                        flights from Dubai to Ashgabat, and is most frequently used by travelers coming from Australia, Japan and USA. 
+                        For more details on these international flights, please check out the internet or contact us.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img 
+                        src="https://cdn1.npcdn.net/images/1720146101_51e4107047f9ecfabc38f376da43c37c.webp?md5id=aae14bda33aa45a1d45d45011529b806&new_width=1000&new_height=1000&size=max&type=3&w=-62170008925&off_wm=1&from=png" 
+                        alt="Turkmen Cuisine"
+                        class="w-full h-80 object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">When to go</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        Turkmenistan’s climate is extremely continental with hot, dry summers. Midsummer temperature 
+                        can reach 45 °C.  However, such temperatures are quite bearable because of the very low humidity. <br><br>
+                        Winter is mild with average temperatures below freezing for only a few days in January and February. 
+                        However, in the north of the country winter is severe. January temperatures in Dashoguz average - 23 
+                        degrees Celsius. Most rainfall occurs in March and April. <br><br>
+                        Spring (April-June) and autumn (August-October) are the best seasons to visit Turkmenistan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-black shadow py-6 text-center">
+        <p>&copy; 2026 Turkmenistan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close",
+            list.classList.add('top-[50px]'),
+            list.classList.add('opacity-100'))
+
+            : (e.name = "menu",
+            list.classList.remove('top-[50px]'),
+            list.classList.remove('opacity-100'))
+
+        }
+    </script>
+</body>
+</html>

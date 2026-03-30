@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurkmenTravel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between fixed w-full top-0 z-50">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg" 
+                    alt="TurkmenTravel Logo" 
+                    class="w-9 h-9 object-contain">
+                <span class="text-2xl cursor-pointer font-[Pacifico] font-bold">
+                    TurkmenTravel
+                </span>
+            </a>
+
+            <span class="text-3xl cursor-pointer md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 
+        md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in 
+        duration-500">
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="index.html" class="text-xl hover:text-green-600 duration-500">Home</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="about.html" class="text-xl hover:text-green-600 duration-500">About</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="tours.html" class="text-xl hover:text-green-600 duration-500">Tours</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="travelinfo.html" class="text-xl hover:text-green-600 duration-500">Travel Info</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="contact.html" class="text-xl text-green-600 font-semibold duration-500">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="grid md:grid-cols-2 min-h-screen">
+
+        <div class="relative order-2 md:order-1 h-64 md:h-auto">
+            <img 
+                src="https://www.easyjet.com/ejcms/cache/medialibrary/Images/JSS/CustomerService/contactUsBanner.jpg?mw=1920&hash=FDAB90EED3A7CBFCEBDE0D2ACB304965"
+                class="absolute inset-0 w-full h-full object-cover"
+                alt="Travelstyles">
+        </div>
+
+        <div class="bg-gray-100 flex items-center justify-center px-6 md:px-8 py-12 md:py-16 order-1 md:order-2">
+            <div class="w-full max-w-lg">
+                
+            <h2 class="text-3xl font-bold mt-8 mb-2 text-gray-800">Make an enquiry</h2>
+            <p class="text-gray-600 mb-6">Fields marked with an * are required</p>
+
+            <form class="space-y-4">
+                <input type="text" placeholder="First name *"
+                    class="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-500">
+
+                <input type="text" placeholder="Surname"
+                    class="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-500">
+
+                <input type="text" placeholder="Phone number"
+                    class="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-500">
+
+                <input type="email" placeholder="E-mail *"
+                    class="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-500">
+
+                <select class="w-full p-3 rounded-lg border text-gray-500">
+                    <option>- Select Country -</option>
+                </select>
+
+                <textarea rows="4" placeholder="Ask a question..."
+                    class="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+
+                <button class="w-full bg-green-800 text-white py-3 rounded-lg hover:bg-green-600">
+                    Submit
+                </button>
+            </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="py-20 px-10 text-center">
+        <h2 class="text-3xl font-bold mb-6">TurkmenTravel Contact Information</h2>
+        <p class="text-gray-600 leading-relaxed mb-12">We're here to help with any questions, orders, or feedback—just 
+            reach out and we'll get back to you soon!
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-2">
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/542/542689.png"
+                    alt="Tour Selection"
+                    class="w-24 h-24 object-cover mx-auto mb-3">
+                <div class="p-2 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-3">Email Address</h3>
+                    <p class="text-gray-600 leading-relaxed">turkmentravel@gmail.com</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/46/46854.png"
+                    alt="Contact Us"
+                    class="w-24 h-24 object-cover mx-auto mb-3">
+                <div class="p-2 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-3">Phone Number</h3>
+                    <p class="text-gray-600 leading-relaxed">+99789883210</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="https://icons.veryicon.com/png/o/internet--web/common-icons-for-web-pages/14-facebook.png"
+                    alt="Planning"
+                    class="w-24 h-24 object-cover mx-auto mb-3">
+                <div class="p-2 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-3">Social Media</h3>
+                    <p class="text-gray-600 leading-relaxed">Facebook Page: TurkmanTravel Official</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-black shadow py-6 text-center">
+        <p>&copy; 2026 Turkmenistan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close",
+            list.classList.add('top-[50px]'),
+            list.classList.add('opacity-100'))
+
+            : (e.name = "menu",
+            list.classList.remove('top-[50px]'),
+            list.classList.remove('opacity-100'))
+
+        }
+    </script>
+</body>
+</html>
